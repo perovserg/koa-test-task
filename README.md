@@ -1,5 +1,5 @@
-npm run docker:up => to start app
-npm run docker:down => to stop app
+- npm run docker:up => to start app
+- npm run docker:down => to stop app
 
 
 endpoints:
