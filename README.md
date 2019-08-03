@@ -14,8 +14,11 @@ expected fields:
 - dob => date of birth with format "DD/MM/YYYY" (required)
 
 PUT http://localhost:3001/employees/:id
+
 GET http://localhost:3001/employees/:id
+
 DELETE http://localhost:3001/employees/:id
+
 GET http://localhost:3001/employees/all
 
 env variables:
