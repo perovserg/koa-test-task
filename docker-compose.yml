@@ -3,7 +3,7 @@ services:
   mongo:
     image: mongo
     volumes:
-      - ./db:/data/db
+      - koa_test_task_db:/data/db
   mts-test-task:
     build:
       context: .
@@ -14,3 +14,6 @@ services:
       - "3001:3001"
     depends_on:
       - mongo
+volumes:
+  koa_test_task_db:
+    driver: local

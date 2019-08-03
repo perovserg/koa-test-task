@@ -1,7 +1,11 @@
 {
   "name": "mts-test-task",
   "version": "1.0.0",
-  "description": "",
+  "description": "mts-test-task",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perovserg/koa-test-task"
+  },
   "main": "app.js",
   "scripts": {
     "start": "node -r esm app.js",
