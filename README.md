@@ -7,7 +7,7 @@ endpoints:
 POST http://localhost:3001/employees
 expected fields: 
 - name => string (required)
-- email => email (required & unique)
+- email => string (required & unique)
 - position => string
 - photo => string (link to picture)
 - phone => string
