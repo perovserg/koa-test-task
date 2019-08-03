@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - ./db:/data/db
+  mts-test-task:
+    build:
+      context: .
+    image: mts-test-task
+    environment:
+      API_PORT: 3001
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
